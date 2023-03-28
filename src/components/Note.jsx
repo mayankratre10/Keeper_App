@@ -7,7 +7,7 @@ const Note = (props) => {
         marginLeft: '4rem',
         display: 'inline-block',
         boxShadow: "0px 1px 10px #999",
-        minHeight: "140px",
+        // minHeight: "140px",
         // display: "flex",
         // flexDirection: "column",
         justifyContent: "center"

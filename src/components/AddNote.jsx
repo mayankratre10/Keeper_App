@@ -9,19 +9,19 @@ const AddNote = () => {
 
     }
     let addBoxStyle = {
-        marginTop: "4rem", 
-        marginLeft: "3rem", 
+        marginTop: "4rem",
+        marginLeft: "3rem",
         display: "inline-block",
     }
     return (
         <div style={addBoxStyle}>
             <div className="form-floating" style={addnoteStyle}>
-                <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label htmlFor="floatingTextarea">Tittle</label>
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                <label for="floatingInput">Tittle</label>
             </div>
             <div className="form-floating" style={addnoteStyle}>
-                <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label htmlFor="floatingTextarea">Details</label>
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Password" />
+                <label for="floatingInput">Details</label>
             </div>
             <button style={{ marginLeft: "1rem" }} type="button" className="btn btn-info">ADD</button>
         </div>
