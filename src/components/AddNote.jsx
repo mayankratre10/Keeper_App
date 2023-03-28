@@ -17,13 +17,13 @@ const AddNote = () => {
         <div style={addBoxStyle}>
             <div className="form-floating" style={addnoteStyle}>
                 <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Tittle</label>
+                <label htmlFor="floatingTextarea">Tittle</label>
             </div>
             <div className="form-floating" style={addnoteStyle}>
                 <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Details</label>
+                <label htmlFor="floatingTextarea">Details</label>
             </div>
-            <button style={{ marginLeft: "1rem" }} type="button" class="btn btn-info">ADD</button>
+            <button style={{ marginLeft: "1rem" }} type="button" className="btn btn-info">ADD</button>
         </div>
     )
 }
