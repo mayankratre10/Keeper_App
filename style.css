@@ -1,0 +1,65 @@
+.note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+  }
+  .note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .note button {
+    position: relative;
+    float: right;
+    /* margin-right: 1rem; */
+    color: red;
+    border: none;
+    width: 4rem;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+.addnoteStyle  {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+    background:none
+
+}
+.btnStyle {
+    position: absolute;
+    right: 25px;
+    bottom: -25px;
+    background: green;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+}
+.addBoxStyle  {
+    position: relative;
+    width: 500px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
