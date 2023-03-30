@@ -1,29 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
+import AddIcon from '@mui/icons-material/Add';
 
-const AddNote = () => {
-    let addnoteStyle = {
-        width: "50vw",
-        display: "block",
-        margin: "1rem",
-        height: "3rem",
-
-    }
-    let addBoxStyle = {
-        marginTop: "4rem",
-        marginLeft: "3rem",
-        display: "inline-block",
+const AddNote = ({addNote}) => {
+    
+    const [note,setNote]=useState({id:"", Tittle:"",Content:""});
+    function handleChange(event){
+        const {name,value} =event.target;
+        setNote((prev)=>{
+            return{
+                ...prev,
+                [name]:value,
+                
+            }
+        });
     }
     return (
-        <div style={addBoxStyle}>
-            <div className="form-floating" style={addnoteStyle}>
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                <label for="floatingInput">Tittle</label>
+        <div style={{alignItems:"center"}}>
+        <form className="addBoxStyle" onSubmit={(event)=>{addNote(note);event.preventDefault();setNote({id:"", Tittle:"",Content:""})}}>
+            <div  className="addnoteStyle">
+                <input className="form-control" onChange={handleChange} value={note.Tittle} name='Tittle' type="text"  placeholder="Tittle" />
             </div>
-            <div className="form-floating" style={addnoteStyle}>
-                <input type="text" class="form-control" id="floatingPassword" placeholder="Password" />
-                <label for="floatingInput">Details</label>
+            <div className="addnoteStyle">
+                <input className="form-control" onChange={handleChange} value={note.Content} name='Content' type="text" placeholder="Content" />
             </div>
-            <button style={{ marginLeft: "1rem" }} type="button" className="btn btn-info">ADD</button>
+            <button className="btnStyle" type="submit"><AddIcon/></button>
+        </form>
         </div>
     )
 }
